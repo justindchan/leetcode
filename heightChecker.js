@@ -16,13 +16,10 @@ var heightChecker = function(heights) {
   // console.log(heights.sort(sortNum));
   // console.log([...heights].sort(sortNum))
   let sortedHeights = [...heights].sort(sortNum);
-  // console.log(sortedHeights);
   let counter = 0;
   for (let i = 0; i < heights.length; i++) {
       if (heights[i] !== sortedHeights[i]) {
-          // console.log(heights[i], sortedHeights[i])
           counter++;
-          // console.log(i)
       }
   }
   return counter;
