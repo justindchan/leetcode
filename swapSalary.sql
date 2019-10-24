@@ -22,7 +22,11 @@
 
 -- # change all f's to m's and vice versa
 
+-- UPDATE salary
+-- SET sex = CASE WHEN sex = 'm' THEN 'f' 
+--                   WHEN sex = 'f' THEN 'm'
+--                   ELSE sex END;
+
 UPDATE salary
-SET sex = CASE WHEN sex = 'm' THEN 'f' 
-                  WHEN sex = 'f' THEN 'm'
-                  ELSE sex END;
+SET sex = IF(sex='f','m','f');
+-- faster
