@@ -15,16 +15,32 @@
 // Input: [1,1,1,3,3,4,3,2,4,2]
 // Output: true
 
+// using a set takes 60 ms, using index of takes 3000ms
 var containsDuplicate = function(nums) {
-  let output = false;
-  if (nums === []) {
-      return output
-  } else {
-     for (let i = 0; i < nums.length; i++) {
-          if (nums.indexOf(nums[i]) !== nums.lastIndexOf(nums[i])) {
-              output = true;
-          } 
-      } 
-  }
-  return output;
+   let numSet = new Set([]);
+   if (nums.length === 0 || nums.length === 1) {
+       return false;
+   }
+   nums.forEach((element) => {numSet.add(element);})
+   if (nums.length !== numSet.size) {
+       return true;
+   } else {
+       return false;
+   }
 };
+
+// --slow solution using js methods.
+
+// var containsDuplicate = function(nums) {
+//   let output = false;
+//   if (nums === []) {
+//       return output
+//   } else {
+//      for (let i = 0; i < nums.length; i++) {
+//           if (nums.indexOf(nums[i]) !== nums.lastIndexOf(nums[i])) {
+//               output = true;
+//           } 
+//       } 
+//   }
+//   return output;
+// };
