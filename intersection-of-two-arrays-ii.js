@@ -5,49 +5,71 @@
   //  if occurence of element in one object is less than occurence of element in other object,     
     //  push that element to the output array the lesser number of times it occurs, .  
 
-var countOccurences = function (nums) {
-    let occurences = {};
-    for (let i = 0; i < nums.length; i++) {
-        if (!occurences[nums[i]]) {
-            occurences[nums[i]] = 1;
-        } else {
-            occurences[nums[i]]++;
-        }
-    }
-    return occurences;
-}
-
+    
+//works
 var intersect = function(nums1, nums2) {
-  let occurences1 = countOccurences(nums1);
-  let occurences2 = countOccurences(nums2);
-  let output = [];
-  
-  console.log(occurences1)
-  console.log(occurences2)
-
-  for (let i = 0; i < nums1.length; i++) {
-      if (nums2.includes(nums1[i])) {
-          if (occurences1[nums1[i]] < occurences2[nums1[i]]) {
-              for (let j = occurences1[nums1[i]]; j > 0; j--) {
-                  output.push(nums1[i]);
-              }
-          } else if (occurences1[nums1[i]] > occurences2[nums1[i]]) {
-              for (let k = occurences2[nums1[i]]; k > 0; k--) {
-                  output.push(nums1[i]);
-              }
-          //  not satisfying all edge cases.    
-          } else if (occurences1[nums1[i]] == occurences2[nums1[i]]) {
-              console.log(occurences1[nums1[i]])
-              for (let l = occurences1[nums1[i]]; l > 0; l--) {
-                  
-                  output.push(nums1[i]);
-                  
-              }
-          }
-      }
+  nums1 = nums1.sort((a, b) => a - b);
+  nums2 = nums2.sort((a, b) => a - b);
+  let results = [];
+  let i = 0;
+  let j = 0;
+  while (i < nums1.length && j < nums2.length) {
+    if (nums1[i] == nums2[j]) {
+      results.push(nums1[i]);
+      i++;
+      j++;
+    } else if (nums1[i] < nums2[j]) {
+      i++;
+    } else {
+      j++;
+    }
   }
-  return output;
+  return results;
 };
+
+// var countOccurences = function (nums) {
+//     let occurences = {};
+//     for (let i = 0; i < nums.length; i++) {
+//         if (!occurences[nums[i]]) {
+//             occurences[nums[i]] = 1;
+//         } else {
+//             occurences[nums[i]]++;
+//         }
+//     }
+//     return occurences;
+// }
+
+// var intersect = function(nums1, nums2) {
+//   let occurences1 = countOccurences(nums1);
+//   let occurences2 = countOccurences(nums2);
+//   let output = [];
+  
+//   console.log(occurences1)
+//   console.log(occurences2)
+
+//   for (let i = 0; i < nums1.length; i++) {
+//       if (nums2.includes(nums1[i])) {
+//           if (occurences1[nums1[i]] < occurences2[nums1[i]]) {
+//               for (let j = occurences1[nums1[i]]; j > 0; j--) {
+//                   output.push(nums1[i]);
+//               }
+//           } else if (occurences1[nums1[i]] > occurences2[nums1[i]]) {
+//               for (let k = occurences2[nums1[i]]; k > 0; k--) {
+//                   output.push(nums1[i]);
+//               }
+//           //  not satisfying all edge cases.    
+//           } else if (occurences1[nums1[i]] == occurences2[nums1[i]]) {
+//               console.log(occurences1[nums1[i]])
+//               for (let l = occurences1[nums1[i]]; l > 0; l--) {
+                  
+//                   output.push(nums1[i]);
+                  
+//               }
+//           }
+//       }
+//   }
+//   return output;
+// };
 
 intersect([1,2,2,1], [2,2]); // edge cases flipping 
 intersect([1,2], [2,1])  // edge cases flipping
