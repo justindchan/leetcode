@@ -11,7 +11,7 @@
 // Note:
 
 // Each element in the result must be unique.
-// The result can be in any order.
+// The result can be in any order.  
 
 var intersection = function(nums1, nums2) {
   let output = []
@@ -25,3 +25,5 @@ var intersection = function(nums1, nums2) {
   return output;
 };
 
+intersection([1,2,2,1], [2,2])  //  [2]
+intersection([4,9,5], [9,4,9,8,4])  //  [9,4]
