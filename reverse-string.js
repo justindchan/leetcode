@@ -4,8 +4,6 @@
 
 // You may assume all the characters consist of printable ascii characters.
 
- 
-
 // Example 1:
 
 // Input: ["h","e","l","l","o"]
@@ -25,6 +23,8 @@ var reverseString = function(s) {
           s[j] = x;
       }
   };
+
+  reverseString(["h","e","l","l","o"])  //  ["o","l","l","e","h"]
   
   //  refactored from below
   //     for (let i = 0, j = s.length - 1; i < j; i++, j--) {
