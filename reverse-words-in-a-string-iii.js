@@ -23,3 +23,4 @@ var reverseWords = function(s) {
 };
 
 reverseWords("Let's take LeetCode contest") // "s'teL ekat edoCteeL tsetnoc"
+reverseWords("hehhhhhhhhh") // "hhhhhhhhheh"
