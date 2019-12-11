@@ -16,7 +16,6 @@ const midRow = ['asdfghjklASDFGHJKL'];
 const bottomRow = ['zxcvbnmZXCVBNM'];
 
 var findWords = function(words) {
-    
     let output = [];
     for (let i = 0; i < words.length; i++) {
         let topCount = 0;
@@ -32,7 +31,6 @@ var findWords = function(words) {
             }
             if ([...midRow[0]].includes(words[i][j])) {
                 midCount++;
-                
                 if (midCount === words[i].length) {
                     output.push(words[i])
                 }
