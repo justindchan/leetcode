@@ -23,3 +23,5 @@ var singleNumber = function(nums) {
   }
   return output; 
 };
+
+singleNumber([2,2,1])
