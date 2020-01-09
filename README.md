@@ -1,3 +1,3 @@
 # leetcode
 problems
-updated daily 5
+updated daily 6
