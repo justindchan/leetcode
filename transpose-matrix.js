@@ -34,6 +34,7 @@ var transpose = function(A) {
   }
   return transposed;
 };
+transpose([[1,2,3],[4,5,6]]) // [[1,4],[2,5],[3,6]]
 
 // -- in place transposition for N x N matrix.
 // var transpose = function(A) {
