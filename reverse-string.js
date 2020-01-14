@@ -24,11 +24,4 @@ var reverseString = function(s) {
       }
   };
 
-  reverseString(["h","e","l","l","o"])  //  ["o","l","l","e","h"]
-  
-  //  refactored from below
-  //     for (let i = 0, j = s.length - 1; i < j; i++, j--) {
-  //         const x = s[i]; const y = s[j];
-  //         s[i] = s[j];
-  //         s[j] = s[i];
-  //     }    
+  reverseString(["h","e","l","l","o"])  //  ["o","l","l","e","h"]  
