@@ -20,16 +20,30 @@
 // Output:  [[1,4],
 //           [2,5],
 //           [3,6]]
- 
-// -- in place transposition for N x N matrix.
+
+// -- passing solution for N x N or M x N matrix, using additional space. 
 var transpose = function(A) {
-    for (let i = 0; i < A.length; i++) {
-        for (let j = i; j < A.length; j++) {
-            let temp = A[j][i];
-            A[j][i] = A[i][j];
-            A[i][j] = temp;
-        }
-    }
-    return A;
+  let rows = A.length;
+  let columns = A[0].length;
+  let transposed = [];
+  for (let i = 0; i < columns; i++) {
+      transposed[i] = [];
+      for (let j = 0; j < rows; j++) {
+          transposed[i][j] = A[j][i];
+      }
+  }
+  return transposed;
 };
+
+// -- in place transposition for N x N matrix.
+// var transpose = function(A) {
+//     for (let i = 0; i < A.length; i++) {
+//         for (let j = i; j < A.length; j++) {
+//             let temp = A[j][i];
+//             A[j][i] = A[i][j];
+//             A[i][j] = temp;
+//         }
+//     }
+//     return A;
+// };
 
