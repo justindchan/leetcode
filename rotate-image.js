@@ -40,5 +40,13 @@
 // ]
 
 var rotate = function(matrix) {
-    
+// -- in place transposition for N x N matrix.
+  for (let i = 0; i < A.length; i++) {
+      for (let j = i; j < A.length; j++) {
+          let temp = A[j][i];
+          A[j][i] = A[i][j];
+          A[i][j] = temp;
+      }
+  }
+  // TODO
 };
