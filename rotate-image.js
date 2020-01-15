@@ -48,5 +48,10 @@ var rotate = function(matrix) {
           A[i][j] = temp;
       }
   }
-  // TODO
+  // reverse each array now. must use ES6 syntax to achieve constant space.
+  for (let k = 0; k < matrix.length; k++) {
+    for(let i = 0, j = matrix[k].length-1; i < j; i++, j--) {
+        [matrix[k][i], matrix[k][j]] = [matrix[k][j], matrix[k][i]];
+    }
+  }
 };
