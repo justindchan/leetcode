@@ -40,20 +40,20 @@
 // ]
 
 var rotate = function(matrix) {
-// In-place transposition for N x N matrix. 
-// TODO refactor to not use temp storage?
+  // In-place transposition for N x N matrix. 
+  // TODO refactor to not use temp storage?
   for (let i = 0; i < matrix.length; i++) {
-      for (let j = i; j < matrix.length; j++) {
-          let temp = matrix[j][i];
-          matrix[j][i] = matrix[i][j];
-          matrix[i][j] = temp;
-      }
+    for (let j = i; j < matrix.length; j++) {
+      let temp = matrix[j][i];
+      matrix[j][i] = matrix[i][j];
+      matrix[i][j] = temp;
+    }
   }
   // reverse each array now. must use ES6 syntax to achieve constant space.
   for (let k = 0; k < matrix.length; k++) {
     // two pointer swap!
     for(let i = 0, j = matrix[k].length-1; i < j; i++, j--) {
-        [matrix[k][i], matrix[k][j]] = [matrix[k][j], matrix[k][i]];
+      [matrix[k][i], matrix[k][j]] = [matrix[k][j], matrix[k][i]];
     }
   }
 };
