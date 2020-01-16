@@ -20,25 +20,25 @@
 // E: more than 32 bit integer, returns 0
 // C: -
 
+// convert x to string
+// account for non 32-bit integer, return 0
+// account for if negative
+// reverse string
+// convert back to number and return 
 
 var reverse = function(x) {
-  // convert x to string
-  // account for non 32-bit integer, return 0
-  // account for if negative
-  // reverse string
-  // convert back to number
-  // return that reversed number
-  let output = 0
-  
-  // account for 32-bit integer range?
-  if (x < 0 && x > -1563847412) {
+  const MAX = Math.pow(2, 31) -1;
+  const MIN = Math.pow(2, 31) * -1;
+  let output = 0;
+  if (x < 0) {
       output = Math.abs(x).toString().split('').reverse().join('')
       output = -Math.abs(output);
-      console.log(output)
   }
-  if (x > 0 && x < 1534236469) {
+  if (x > 0) {
       output = x.toString().split('').reverse().join('')
-      console.log(output)
   }
-  return output;
+  if (output > MAX || output < MIN) {
+      return 0;
+  }
+  return Number(output);
 };
