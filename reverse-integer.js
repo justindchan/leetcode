@@ -42,3 +42,5 @@ var reverse = function(x) {
   }
   return Number(output);
 };
+reverse(123); // 321
+reverse(9999999999999) // 0
