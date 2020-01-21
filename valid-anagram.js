@@ -33,14 +33,12 @@ var isAnagram = function(s, t) {
           obj2[t[j]]++;
       }
   }
-  // console.log(obj1, obj2)
-  // console.log(Object.entries(obj1).sort((a, b) => b[0].localeCompare(a[0])) , Object.entries(obj2).sort((a, b) => b[0].localeCompare(a[0])))
   obj1 = Object.entries(obj1).sort((a, b) => b[0].localeCompare(a[0]));
   obj2 = Object.entries(obj2).sort((a, b) => b[0].localeCompare(a[0]));
-  // console.log(JSON.stringify(obj1), JSON.stringify(obj2))
   if (JSON.stringify(obj1) == JSON.stringify(obj2)) {
       isEqual = true; 
   }
   return isEqual;
 };
 
+isAnagram("anagram", "nagaram"); // true
