@@ -45,3 +45,5 @@ var isPalindrome = function(s) {
     // }
     return true;
 };
+
+isPalindrome('race a car') // false
