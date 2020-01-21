@@ -39,5 +39,9 @@ var isPalindrome = function(s) {
             return false;
         }
     }
+    // if scrubbed is equal to scrubbed reversed, return true // otherwise return false // SLOWER
+    // if (scrubbed != scrubbed.split('').reverse().join('')) {
+    //     return false
+    // }
     return true;
 };
