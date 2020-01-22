@@ -33,3 +33,5 @@ var strStr = function(haystack, needle) {
   // lol
   // return haystack.indexOf(needle);
 };
+
+strStr("hello", "ll"); // 2
