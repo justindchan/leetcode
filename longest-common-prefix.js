@@ -56,3 +56,4 @@ var longestCommonPrefix = function(strs) {
   return strs[0];
 };
 
+longestCommonPrefix(['abb', 'abc']); // 'ab'
