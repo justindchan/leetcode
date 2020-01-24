@@ -27,11 +27,25 @@
       // if not found
         // return the slice of the first char to the last iteration index, cutting it at the last found common character
 
+// USING FOR OF
+// var longestCommonPrefix = function(strs) {
+//   if (!strs.length || strs === undefined) {
+//       return '';
+//   }
+//   for (let i = 0; i < strs[0].length; i++) {
+//     for (let str of strs) {
+//       if (str[i] !== strs[0][i]) {
+//         return str.slice(0, i);
+//       }
+//     }
+//   }
+// return strs[0];
+// };
+
 var longestCommonPrefix = function(strs) {
   if (!strs.length || strs === undefined) {
       return '';
   }
-
   for (let i = 0; i < strs[0].length; i++) {
       for (let j = 0; j < strs.length; j++) {
           if (strs[0][i] !== strs[j][i]) {
@@ -41,3 +55,4 @@ var longestCommonPrefix = function(strs) {
   }
   return strs[0];
 };
+
