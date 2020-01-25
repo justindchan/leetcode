@@ -1,3 +1,5 @@
 # leetcode
 problems
-updated daily 7
+Arrays - 
+Strings - 
+Linked-Lists - 
