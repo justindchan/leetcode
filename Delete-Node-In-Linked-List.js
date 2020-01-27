@@ -2,10 +2,6 @@
 
 // Given linked list -- head = [4,5,1,9], which looks like following:
 
-
-
- 
-
 // Example 1:
 
 // Input: head = [4,5,1,9], node = 5
@@ -36,6 +32,9 @@
  * param {ListNode} node
  * return {void} Do not return anything, modify node in-place instead.
  */
+
 var deleteNode = function(node) {
-    
+  node.val = node.next.val;
+  node.next = node.next.next;
 };
+
