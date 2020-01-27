@@ -1,5 +1,6 @@
 # leetcode
 problems
+SQL - 2
 Arrays - 
 Strings - 
-Linked-Lists - 
+Linked-Lists - 1
