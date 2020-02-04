@@ -1,6 +1,6 @@
 # leetcode
 problems
 SQL - 2
-Arrays - 
+Arrays - 12
 Strings - 
 Linked-Lists - 2
