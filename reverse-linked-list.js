@@ -20,6 +20,10 @@
  * return {ListNode}
  */
 var reverseList = function(head) {
+
+  // two pointers
+  // iterative approach suing while loop
+
   // ListNode prev = null;
   // ListNode curr = head;
   // while (curr != null) {
