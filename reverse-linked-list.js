@@ -20,17 +20,24 @@
  * return {ListNode}
  */
 var reverseList = function(head) {
-
-  // two pointers
-  // iterative approach suing while loop
-
-  // ListNode prev = null;
-  // ListNode curr = head;
-  // while (curr != null) {
-  //     ListNode nextTemp = curr.next;
-  //     curr.next = prev;
-  //     prev = curr;
-  //     curr = nextTemp;
-  // }
-  // return prev;
+  // iterative
+  // account for edge case if head = null
+  if (head === null) {
+      return null;
+  }
+  // declare pointers
+  let prev = null;
+  let curr = head;
+  let next = curr.next;
+  // prev -> curr -> next 
+  while (curr != null) {
+      // save new next
+      next = curr.next;
+      // reverse next pointer
+      curr.next = prev;
+      //advance prev & curr
+      prev = curr;
+      curr = next
+  }
+  return prev;
 };
