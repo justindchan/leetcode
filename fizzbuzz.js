@@ -36,13 +36,26 @@
 // E: n = 0, n < 0?
 
 var fizzBuzz = function(n) {
-    // initialize output array
-    
-    // initialize loop at i = 1, iterate n times
+  // initialize output array
+  let fizzBuzz = [];
+  // initialize loop at i = 1, iterate n times
+  for (let i = 1; i <= n; i++) {
     // if not multiple of 3 or 5, push i to output array
+    if (i % 3 !== 0 && i % 5 !== 0) {
+      fizzBuzz.push(i.toString())
+    }
     // if multiple of 3, push Fizz to output array
+    if (i % 3 === 0) {
+      fizzBuzz[i - 1] = "Fizz";
+    }
     // if multiple of 5, push Buzz to output array
-      // should account for when i is a multiple of both 3 and 5
-
-    return fizzBuzz;
+    if (i % 5 === 0) {
+      fizzBuzz[i - 1] = "Buzz";
+    }
+    // should account for when i is a multiple of both 3 and 5
+    if (i % 3 === 0 && i % 5 === 0) {
+      fizzBuzz[i - 1] = "FizzBuzz";
+    }
+  }
+  return fizzBuzz;
 };
