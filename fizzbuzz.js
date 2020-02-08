@@ -42,7 +42,7 @@ var fizzBuzz = function(n) {
   for (let i = 1; i <= n; i++) {
     // if not multiple of 3 or 5, push i to output array
     if (i % 3 !== 0 && i % 5 !== 0) {
-      fizzBuzz.push(i.toString())
+      fizzBuzz.push(i.toString());
     }
     // if multiple of 3, push Fizz to output array
     if (i % 3 === 0) {
@@ -59,3 +59,5 @@ var fizzBuzz = function(n) {
   }
   return fizzBuzz;
 };
+
+fizzBuzz(15); // ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz"];
