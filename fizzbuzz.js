@@ -36,5 +36,13 @@
 // E: n = 0, n < 0?
 
 var fizzBuzz = function(n) {
+    // initialize output array
     
+    // initialize loop at i = 1, iterate n times
+    // if not multiple of 3 or 5, push i to output array
+    // if multiple of 3, push Fizz to output array
+    // if multiple of 5, push Buzz to output array
+      // should account for when i is a multiple of both 3 and 5
+
+    return fizzBuzz;
 };
