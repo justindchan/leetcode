@@ -42,7 +42,7 @@ var fizzBuzz = function(n) {
   for (let i = 1; i <= n; i++) {
     // if not multiple of 3 or 5, push i to output array
     if (i % 3 !== 0 && i % 5 !== 0) {
-      fizzBuzz.push(i.toString());
+      fizzBuzz[i - 1] = i.toString();
     }
     // if multiple of 3, push Fizz to output array
     if (i % 3 === 0) {
