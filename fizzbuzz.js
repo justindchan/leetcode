@@ -30,6 +30,10 @@
  * return {string[]}
  */
 
+// I: n, the range of the ouput
+// O: an array containing the string representation of numbers from 1 to n
+// C: -
+// E: n = 0, n < 0?
 
 var fizzBuzz = function(n) {
     
