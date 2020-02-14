@@ -53,6 +53,7 @@
  */
 
 // hashset ? unique values
+// js arrays or sets?
 
 var isValidSudoku = function(board) {
     
