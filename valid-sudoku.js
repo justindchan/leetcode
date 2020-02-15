@@ -55,6 +55,58 @@
 // hashset ? unique values
 // js arrays or sets?
 
+function validate(board, row, col, rowStart, colStart) {
+  let item = board[row][col];
+  for (let i = 0; i < board.length; i++) {
+      // check colums
+      if (i != col) {
+          if (board[row][i] == item) {
+              return false;
+          }
+      }
+      // check rows
+      if (i != row) {
+          if (board[i][col] == item) {
+              return false;
+          }
+      }
+  }
+  for (let i = rowStart; i < rowStart + 3; i++) {
+      for (let j = colStart; j < colStart + 3; j++) {
+          if (i != row && j != col) {
+              if (board[i][j] == item) {
+                  return false;
+              }
+          }
+      }
+  }
+  return true;
+}
+
 var isValidSudoku = function(board) {
-    
+  let squareCount = 9;
+  let rowStart = 0;
+  let colStart = 0;
+  while (true) {
+      for (let r = rowStart; r < rowStart + 3; r++) {
+          for (let c = colStart; c < colStart + 3; c++) {
+              let item = board[r][c];
+              if (item != ".") {
+                  let isValid = validate(board, r, c, rowStart, colStart);
+                  if (!isValid) {
+                      return false;
+                  }
+              }
+          }
+      }
+      colStart = colStart + 3;
+      if (colStart == squareCount) {
+          colStart = 0;
+          rowStart = rowStart + 3;
+      }
+      if (rowStart == squareCount) {
+          break;
+      }
+  }
+  return true;
 };
