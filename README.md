@@ -1,7 +1,7 @@
 # leetcode
 problems - 40
 SQL - 2
-Arrays - valid sudoku
+Arrays - +2
 Strings - alot 
 Linked-Lists - 3 (on mergetwosortedlists)
 Math - 1
