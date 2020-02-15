@@ -49,5 +49,32 @@
 // matrix[i][j] is either 0 or 1.
 
 var kWeakestRows = function(mat, k) {
-  
+  let len = mat.length;
+    if(len === 0) return [];
+	
+	 /* building an array of objects using destructuring  */ 
+    let arrayObj = [];
+    for(let row= 0; row < mat.length; row++) {
+      let sum = 0;
+      for(let col= 0; col < mat[row].length; col++) {
+        if(mat[row][col] == 1) sum++;
+      }
+      arrayObj.push({row, sum});
+    }
+    /*  sorting array by valSum,in case of equal sum then return smallest index */
+    arrayObj.sort((a,b) => {
+      if(a.sum == b.sum) {
+        return a.row - b.row;
+      }
+      else {
+        return a.sum - b.sum;
+      }
+    })
+
+    /* gets the k elements from sorted array */
+    let result = [];
+    for(let i = 0; i < k; i++) {
+      result.push(arrayObj[i].row)
+    }
+    return result;
 };
