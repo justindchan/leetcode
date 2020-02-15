@@ -47,3 +47,7 @@
 // 2 <= n, m <= 100
 // 1 <= k <= m
 // matrix[i][j] is either 0 or 1.
+
+var kWeakestRows = function(mat, k) {
+  
+};
