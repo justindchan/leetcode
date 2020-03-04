@@ -25,13 +25,23 @@
 // C: A length is greater than 3 and less than 10000, values of elements in A range between 0 and 10^6, A has to be a mountain
 // E: -
 
+// -Psuedocode-
+  // assign storage for peakIndex, set to 0
+  // assign storage for currentPeakValue, set to A[0]
+  // loop through mountain
+    // if current iteration is greater than currentPeak, 
+      // reassign currentPeakValue to current iteration value
+      // reassign peakIndex to current iteration index
+  // return peak index
+
 var peakIndexInMountainArray = function(A) {
-    // assign storage for peakIndex, set to 0
-    // assign storage for currentPeakValue, set to A[0]
-    // loop through mountain
-      // if current iteration is greater than currentPeak, 
-        // reassign currentPeakValue to current iteration value
-        // reassign peakIndex to current iteration index
-    // return peak index
-    
+  let peakIndex = 0;
+  let currentPeak = A[0]
+  for (let i = 1; i < A.length; i++) {
+    if (A[i] > currentPeak) {
+      currentPeak = A[i];
+      peakIndex = i;
+    }
+  }
+  return peakIndex
 };
