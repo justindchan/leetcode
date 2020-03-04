@@ -20,10 +20,10 @@
 // A is a mountain, as defined above.
 
 
-// I: an array of numbers
-// O: the index of the largest peak
-// C: 
-// E: 
+// I: an array, a mountain
+// O: the index of the peak of the mountain
+// C: A length is greater than 3 and less than 10000, values of elements in A range between 0 and 10^6, A has to be a mountain
+// E: -
 
 var peakIndexInMountainArray = function(A) {
     
