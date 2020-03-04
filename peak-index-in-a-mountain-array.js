@@ -26,5 +26,12 @@
 // E: -
 
 var peakIndexInMountainArray = function(A) {
+    // assign storage for peakIndex, set to 0
+    // assign storage for currentPeakValue, set to A[0]
+    // loop through mountain
+      // if current iteration is greater than currentPeak, 
+        // reassign currentPeakValue to current iteration value
+        // reassign peakIndex to current iteration index
+    // return peak index
     
 };
