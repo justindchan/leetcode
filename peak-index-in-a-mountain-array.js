@@ -45,3 +45,5 @@ var peakIndexInMountainArray = function(A) {
   }
   return peakIndex
 };
+
+peakIndexInMountainArray([0,1,0]) // 1
