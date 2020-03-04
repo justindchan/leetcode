@@ -8,6 +8,7 @@
 
 // Input: [0,1,0]
 // Output: 1
+
 // Example 2:
 
 // Input: [0,2,1,0]
@@ -18,3 +19,12 @@
 // 0 <= A[i] <= 10^6
 // A is a mountain, as defined above.
 
+
+// I: an array of numbers
+// O: the index of the largest peak
+// C: 
+// E: 
+
+var peakIndexInMountainArray = function(A) {
+    
+};
