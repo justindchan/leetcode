@@ -33,3 +33,17 @@
   // for each element in each row
     // invert the values from 0 -> 1 and vice versa
 // return the matrix
+
+var flipAndInvertImage = function(A) {
+  A.forEach((row) => {
+    row.reverse();
+    for (let i = 0; i < row.length; i++) {
+      if (row[i] === 0) {
+        row[i] = 1;
+      } else if (row[i] === 1) {
+        row[i] = 0;
+      }
+    }
+  })
+  return A;
+};
