@@ -21,3 +21,15 @@
 // 1 <= A.length = A[0].length <= 20
 // 0 <= A[i][j] <= 1
 
+// -psuedocode-
+// I: a matrix, n x n or n x m
+// O: return the entire image, flipped horizontally and inverted
+// C: 1 <= A.length = A[0].length <= 20, all elements in matrix are either 0 or 1
+// E: 
+
+// function that takes in one parameter (matrix)
+// for each row in matrix
+  // reverse the front to end
+  // for each element in each row
+    // invert the values from 0 -> 1 and vice versa
+// return the matrix
