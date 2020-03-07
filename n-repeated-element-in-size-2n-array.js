@@ -24,3 +24,15 @@
 // 0 <= A[i] < 10000
 // A.length is even
 
+// -planning
+// I: an array of size 2N, containing N+1 unique elements, exactly one of these elements is repeated N times
+// O: return the element repeated N times
+// C: A.length is greater than or equal to 4, and less than or equal to 10000. values of A are greater than or equal to 0, and less than or equal to 10000, A.length is even
+// E: - 
+
+// use set?
+// assign new Set
+// loop through A
+  // check if current element is already in Set
+    // yes - return element
+    // else - add current element to Set
