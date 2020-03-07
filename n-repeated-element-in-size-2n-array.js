@@ -36,3 +36,14 @@
   // check if current element is already in Set
     // yes - return element
     // else - add current element to Set
+
+var repeatedNTimes = function(A) {
+  let seen = new Set();
+  for (let i = 0; i < A.length; i++) {
+    if (seen.has(A[i])) {
+      return A[i];
+    } else {
+      seen.add(A[i]);
+    }
+  }
+};
