@@ -49,12 +49,13 @@
 // matrix[i][j] is either 0 or 1.
 
 // I: M x N matrix = mat (array of arrays of ones (soldiers) and zeroes (civies)), the number of weakest rows to find = k 
-// O: return the indexes of the k weakest rows in the matrix ordered from weakest to strongest
+// O: return an array of the indexes of the k weakest rows in the matrix ordered from weakest to strongest
 // C: 
 // E:
 
 var kWeakestRows = function(mat, k) {
-
+  // assign output array 
+  let result = [];
   // build an array of objects using destructuring
   let arrayObj = [];
   // loop through matrix to get to each row
@@ -62,7 +63,7 @@ var kWeakestRows = function(mat, k) {
     // assign storage for sum of each row
     let sum = 0;
     // loop through each matrix row to get to column
-    for (let col = 0; col < mat.length; col++) {
+    for (let col = 0; col < mat[row].length; col++) {
       // if soldier is found, increment sum by 1
       if (mat[row][col] == 1) {
         sum++;
@@ -71,8 +72,7 @@ var kWeakestRows = function(mat, k) {
     // push new object containing row number (index) and sum (soldier count) to arrayObj
     arrayObj.push({row, sum});
   }
-  console.log(arrayObj);
-
+  // console.log(arrayObj);
   // sort the array by sum and then by smallest index
   arrayObj.sort((a, b) => {
     if (a.sum == b.sum) {
@@ -81,38 +81,10 @@ var kWeakestRows = function(mat, k) {
       return a.sum - b.sum;
     }
   })
-  console.log(arrayObj);
-
-  // get the first k elements from the sorted array
-
-
-
-  // let len = mat.length;
-  //   if(len === 0) return [];
-	
-	//  /* building an array of objects using destructuring  */ 
-  //   let arrayObj = [];
-  //   for(let row= 0; row < mat.length; row++) {
-  //     let sum = 0;
-  //     for(let col= 0; col < mat[row].length; col++) {
-  //       if(mat[row][col] == 1) sum++;
-  //     }
-  //     arrayObj.push({row, sum});
-  //   }
-  //   /*  sorting array by valSum,in case of equal sum then return smallest index */
-  //   arrayObj.sort((a,b) => {
-  //     if(a.sum == b.sum) {
-  //       return a.row - b.row;
-  //     }
-  //     else {
-  //       return a.sum - b.sum;
-  //     }
-  //   })
-
-  //   /* gets the k elements from sorted array */
-  //   let result = [];
-  //   for(let i = 0; i < k; i++) {
-  //     result.push(arrayObj[i].row)
-  //   }
-  //   return result;
+  // console.log(arrayObj);
+  // return the result => the first k elements from the sorted array
+  for (let i = 0; i < k; i++) {
+    result.push(arrayObj[i].row);
+  }
+  return result;
 };
