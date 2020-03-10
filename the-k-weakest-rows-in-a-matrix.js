@@ -71,10 +71,17 @@ var kWeakestRows = function(mat, k) {
     // push new object containing row number (index) and sum (soldier count) to arrayObj
     arrayObj.push({row, sum});
   }
-  console.log(arrayObj)
+  console.log(arrayObj);
 
   // sort the array by sum and then by smallest index
-  
+  arrayObj.sort((a, b) => {
+    if (a.sum == b.sum) {
+      return a.row - b.row;
+    } else {
+      return a.sum - b.sum;
+    }
+  })
+  console.log(arrayObj);
 
   // get the first k elements from the sorted array
 
