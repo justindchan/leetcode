@@ -54,12 +54,27 @@
 // E:
 
 var kWeakestRows = function(mat, k) {
-  // assign m = mat.length
-  let len = mat.length;
 
   // build an array of objects using destructuring
+  let arrayObj = [];
+  // loop through matrix to get to each row
+  for (let row = 0; row < mat.length; row++) {
+    // assign storage for sum of each row
+    let sum = 0;
+    // loop through each matrix row to get to column
+    for (let col = 0; col < mat.length; col++) {
+      // if soldier is found, increment sum by 1
+      if (mat[row][col] == 1) {
+        sum++;
+      }
+    }
+    // push new object containing row number (index) and sum (soldier count) to arrayObj
+    arrayObj.push({row, sum});
+  }
+  console.log(arrayObj)
 
   // sort the array by sum and then by smallest index
+  
 
   // get the first k elements from the sorted array
 
