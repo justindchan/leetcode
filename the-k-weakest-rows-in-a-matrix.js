@@ -54,11 +54,14 @@
 // E:
 
 var kWeakestRows = function(mat, k) {
+  // assign m = mat.length
+  let len = mat.length;
 
+  // build an array of objects using destructuring
 
+  // sort the array by sum and then by smallest index
 
-
-
+  // get the first k elements from the sorted array
 
 
 
