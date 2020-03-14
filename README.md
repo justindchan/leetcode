@@ -1,5 +1,5 @@
 # leetcode
-problems - 40
+problems - 49
 SQL - 2
 Arrays - +8
 Strings - +1
