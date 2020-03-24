@@ -1,4 +1,4 @@
-# leetcode
+## leetcode
 problems - 50
 SQL - 2
 Arrays - +8
