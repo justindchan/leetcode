@@ -1,7 +1,5 @@
 // Given a non-negative integer num, return the number of steps to reduce it to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
 
- 
-
 // Example 1:
 
 // Input: num = 14
@@ -27,8 +25,17 @@
 // Input: num = 123
 // Output: 12
  
-
 // Constraints:
 
 // 0 <= num <= 10^6
 
+
+// I:  num, a non-negative integer  
+// O:  return the number of steps to reduce it to zero
+// C:  num is a non negative integer, if current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it
+// E:
+
+
+var numberOfSteps  = function(num) {
+      
+};
