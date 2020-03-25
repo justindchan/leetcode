@@ -42,9 +42,15 @@ var numberOfSteps  = function(num) {
       // recursion
       function step(num) {
         // if num is even, divide by 2 and increment stepCount
+        if (num % 2 === 0) {
+          num = num / 2;
+          stepCount++;
+          console.log(num, stepCount)
+        }
           // else, subtract 1 from num and increment stepCount
         // if num is zero, return step count
           // else, recurse steps(num)
 
       }
+      step(num);
 };
