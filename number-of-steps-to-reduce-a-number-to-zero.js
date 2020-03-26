@@ -35,7 +35,6 @@
 // C:  num is a non negative integer, if current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it
 // E:
 
-
 var numberOfSteps  = function(num) {
   // declare step counter var
   let stepCount = 0;
