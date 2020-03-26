@@ -46,11 +46,9 @@ var numberOfSteps  = function(num) {
     if (num % 2 === 0) {
       num = num / 2;
       stepCount++;
-      console.log(num, stepCount);
     } else {
       num = num - 1;
       stepCount++;
-      console.log(num, stepCount);
     }
     // if num is not equal to zero, recurse
     if (num !== 0) {
@@ -60,3 +58,5 @@ var numberOfSteps  = function(num) {
   step(num);
   return stepCount;
 };
+
+numberOfSteps(14); // 6
