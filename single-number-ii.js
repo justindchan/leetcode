@@ -20,5 +20,11 @@
 // E: 
 
 var singleNumber = function(nums){
-  
+  // iterate through nums
+  for (let i = 0; i < nums.length; i++) {
+    // if index of current does equals last index of current, return current
+    if (nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])) {
+      return nums[i];
+    }
+  }
 };
