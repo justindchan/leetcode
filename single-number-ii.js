@@ -28,5 +28,5 @@ var singleNumber = function(nums){
     }
   }
 };
-
+// using index of is js specific and is very slow
 singleNumber([2,2,3,2]) // 3
