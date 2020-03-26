@@ -37,24 +37,26 @@
 
 
 var numberOfSteps  = function(num) {
-      // declare step counter var
-      let stepCount = 0;
-      // recursion
-      function step(num) {
-        // if num is even, divide by 2 and increment stepCount
-          // else, subtract 1 from num and increment stepCount
-        if (num % 2 === 0) {
-          num = num / 2;
-          stepCount++;
-          console.log(num, stepCount);
-        } else {
-          num = num - 1;
-          stepCount++;
-          console.log(num, stepCount);
-        }
-        // if num is zero, return step count
-          // else, recurse steps(num)
-
-      }
+  // declare step counter var
+  let stepCount = 0;
+  // recursion
+  function step(num) {
+    // if num is even, divide by 2 and increment stepCount
+      // else, subtract 1 from num and increment stepCount
+    if (num % 2 === 0) {
+      num = num / 2;
+      stepCount++;
+      console.log(num, stepCount);
+    } else {
+      num = num - 1;
+      stepCount++;
+      console.log(num, stepCount);
+    }
+    // if num is not equal to zero, recurse
+    if (num !== 0) {
       step(num);
+    }
+  }
+  step(num);
+  return stepCount;
 };
