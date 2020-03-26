@@ -14,9 +14,9 @@
 // Output: 99
 
 
-// I: 
-// O: 
-// C: 
+// I: nums, a non-empty array of integers
+// O: the one element in nums that only occurs once
+// C: in nums, every element appears three times except for one - which appears exactly once.  linear runtime complexity, no extra memory 
 // E: 
 
 var singleNumber = function(nums){
