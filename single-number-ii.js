@@ -28,3 +28,5 @@ var singleNumber = function(nums){
     }
   }
 };
+
+singleNumber([2,2,3,2]) // 3
