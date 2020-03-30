@@ -8,3 +8,8 @@
 
 // The order of the result is not important. So in the above example, [5, 3] is also correct.
 // Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
+
+// I: an array of numbers, nums - which has exactly 2 elements that appear only once and all other elements appear twice
+// O: an array of the two elements that only appear once
+// C: 
+// E:
