@@ -41,9 +41,16 @@ var smallerNumbersThanCurrent = function(nums) {
   for (let i = 0; i < nums.length; i++) {
     // assign storage for counter variable
     let smallerCount = 0;
-    // for each element in nums, loop through nums to check if smaller than
+    // for each element in nums, loop through nums to check if nums[i] is smaller than
+    for (let j = 0; j < nums.length; j++) {
       // if true, increment smallerCount
+      if (nums[i] > nums[j]) {
+        smallerCount = smallerCount + 1;
+      }
+    }
     // push smallerCount to output array
+    smallerNums.push(smallerCount);
   }
-  // return smallerCount
+  return smallerNums;
+  // return smallerNums
 };
