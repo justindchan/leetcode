@@ -2,8 +2,6 @@
 
 // Return the answer in an array.
 
- 
-
 // Example 1:
 
 // Input: nums = [8,1,2,2,3]
@@ -22,9 +20,18 @@
 
 // Input: nums = [7,7,7,7]
 // Output: [0,0,0,0]
- 
 
 // Constraints:
 
 // 2 <= nums.length <= 500
 // 0 <= nums[i] <= 100
+
+
+// I: nums, an array of numbers 
+// O: output an array, containing the amount of of numbers that are smaller than that element in nums. each element in the output corresponds to that indexes element in nums
+// C: nums.length i greater than 2 and less than 500, each element in nums is a number between 0 and 100
+// E: 
+
+var smallerNumbersThanCurrent = function(nums) {
+  
+};
