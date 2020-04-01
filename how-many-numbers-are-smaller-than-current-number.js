@@ -51,8 +51,8 @@ var smallerNumbersThanCurrent = function(nums) {
     // push smallerCount to output array
     smallerNums.push(smallerCount);
   }
-  return smallerNums;
   // return smallerNums
+  return smallerNums;
 };
 
 smallerNumbersThanCurrent([8,1,2,2,3]) // [4,0,1,1,3]
