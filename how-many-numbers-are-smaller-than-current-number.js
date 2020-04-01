@@ -12,10 +12,12 @@
 // For nums[2]=2 there exist one smaller number than it (1). 
 // For nums[3]=2 there exist one smaller number than it (1). 
 // For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
+
 // Example 2:
 
 // Input: nums = [6,5,4,8]
 // Output: [2,1,0,3]
+
 // Example 3:
 
 // Input: nums = [7,7,7,7]
@@ -33,5 +35,15 @@
 // E: 
 
 var smallerNumbersThanCurrent = function(nums) {
-  
+  // assign storage for output array
+  let smallerNums = [];
+  // loop through nums
+  for (let i = 0; i < nums.length; i++) {
+    // assign storage for counter variable
+    let smallerCount = 0;
+    // for each element in nums, loop through nums to check if smaller than
+      // if true, increment smallerCount
+    // push smallerCount to output array
+  }
+  // return smallerCount
 };
