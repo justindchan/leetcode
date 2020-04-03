@@ -32,9 +32,8 @@ var countSmaller = function(nums) {
   for (let i = 0; i < nums.length; i++) {
     let currentCount = 0;
     for (let j = i; j < nums.length; j++) {
-      if (nums[i] < nums[j]) {
+      if (nums[i] > nums[j]) {
         currentCount++;
-        // currentCount = currentCount + 1;
       }
     }
     counts.push(currentCount);
