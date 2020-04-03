@@ -9,3 +9,12 @@
 // To the right of 2 there is only 1 smaller element (1).
 // To the right of 6 there is 1 smaller element (1).
 // To the right of 1 there is 0 smaller element.
+
+
+// I:  nums, an integer array 
+// O:  return a new array called counts - counts[i] is the number of smaller elements to the right of counts[i] (how many elements of smaller value, but greater index than counts[i])
+// C:  
+// E:
+
+// f - count smaller (nums)
+  // 
