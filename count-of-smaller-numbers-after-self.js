@@ -17,4 +17,11 @@
 // E:
 
 // f - count smaller (nums)
-  // 
+  // assign storage for output array
+  // i -loop through nums
+    // assign storage for counting 
+    // j - for each element in nums, we want to check if its value is smaller than every element to the right of it (so also if it's index is smaller too but we should be starting the nested loop from the current to save time)
+      // if current i's value is less than j
+        // increment count
+    // push count to output array
+  // return output
