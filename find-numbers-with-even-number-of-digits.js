@@ -1,6 +1,5 @@
 // Given an array nums of integers, return how many of them contain an even number of digits.
  
-
 // Example 1:
 
 // Input: nums = [12,345,2,6,7896]
@@ -19,8 +18,14 @@
 // Explanation: 
 // Only 1771 contains an even number of digits.
  
-
 // Constraints:
 
 // 1 <= nums.length <= 500
 // 1 <= nums[i] <= 10^5
+
+
+// I: nums, an array of integers
+// O: return how many of them contain an even number of digits
+// C: length of input array is 1 -> 500, elements in nums are 1 -> 10^5
+// E: 
+
