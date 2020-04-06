@@ -48,3 +48,5 @@ var findNumbers = function(nums) {
   return evenNumbers;
 };
 
+findNumbers([12, 345, 2, 6, 7869]) // 2
+
