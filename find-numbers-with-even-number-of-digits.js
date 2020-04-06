@@ -29,3 +29,12 @@
 // C: length of input array is 1 -> 500, elements in nums are 1 -> 10^5
 // E: 
 
+// f - findNumbers(nums)
+  // assign storage for output - evenNumbers
+  // loop through nums [i]
+    // count how many digits current i consists of 
+    // if length of current is even
+      // increment evenNumbers
+  // output evenNumbers
+//
+
