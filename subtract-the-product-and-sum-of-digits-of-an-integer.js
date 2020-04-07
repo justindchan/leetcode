@@ -31,36 +31,29 @@
 
 // f - subProductSum - (n)
   // assign storage for result
-
   // assign storage for product of n's digits
   // get product
-
   // assign storage for sum of n's digits
   // get sum
-
   // subtract, product - sum = result
   // return result  
 //
 
-var subProductSum = function(n) {
+var subtractProductAndSum = function(n) {
+  // assign storage for result, product, sum, and stringified n to iterate over
   let result = 0;
   let product = 1;
   let sum = 0;
-  let digits = [];
   let strN = n.toString()
-  // get digits
+  // get digit, product, and sum
   for (let i = 0; i < strN.length; i++) {
-    digits.push(Number(strN[i]))
-  }
-  // get product and sum
-  for (let j = 0; j < digits.length; j++) {
-    product = product * digits[j];
-    sum = sum + digits[j];
+    let digit = Number(strN[i])
+    product = product * digit;
+    sum = sum + digit;    
   }
   // get result
   result = product - sum;
   return result;
-
 };
 
 
