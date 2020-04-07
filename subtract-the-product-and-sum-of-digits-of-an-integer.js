@@ -42,5 +42,18 @@
   // return result  
 //
 
+var subProductSum = function(n) {
+  let result = 0;
+  let product = 0;
+  let sum = 0;
+  let digits = [];
+  let strN = n.toString()
+  // get digits
+  for (let i = 0; i < strN.length; i++) {
+    digits.push(Number(strN[i]))
+  }
+  console.log(digits)
+};
+
 
 
