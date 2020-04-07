@@ -56,5 +56,7 @@ var subtractProductAndSum = function(n) {
   return result;
 };
 
+subtractProductAndSum(234) // 15;
+
 
 
