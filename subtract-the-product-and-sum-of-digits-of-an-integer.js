@@ -22,3 +22,13 @@
 // Constraints:
 
 // 1 <= n <= 10^5
+
+
+// I: n, an integer number
+// O: return the difference between the product of n's digits and the sum of n's digits
+// C: n is 1 -> 10^5
+// E: n only has 1 digit
+
+
+
+
