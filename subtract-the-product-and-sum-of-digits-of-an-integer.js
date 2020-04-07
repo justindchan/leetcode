@@ -29,6 +29,18 @@
 // C: n is 1 -> 10^5
 // E: n only has 1 digit
 
+// f - subProductSum - (n)
+  // assign storage for result
+
+  // assign storage for product of n's digits
+  // get product
+
+  // assign storage for sum of n's digits
+  // get sum
+
+  // subtract, product - sum = result
+  // return result  
+//
 
 
 
