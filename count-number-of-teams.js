@@ -28,3 +28,9 @@
 // n == rating.length
 // 1 <= n <= 200
 // 1 <= rating[i] <= 10^5
+
+
+// I: rating, an array of soldiers (integers), there are n soldiers standing in a line
+// O: return the number of valid teams you can form  
+// C: n == rating.length, 1 <= n <= 200, 1 <= rating[i] <= 10^5
+// E: 
