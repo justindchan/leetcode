@@ -34,3 +34,18 @@
 // O: return the number of valid teams you can form  
 // C: n == rating.length, 1 <= n <= 200, 1 <= rating[i] <= 10^5
 // E: 
+
+//
+//Explanation:
+//The basic idea here is that we're keeping track of two arrays: one that lists the number of integers after rating[i] that are greater than rating[i], and another that lists the number of integers after rating[i] that are less than rating[i]. We do this with nested for loops.
+
+// For the input [2,5,3,4,1], this yields the following arrays:
+
+// [ 3, 0, 1, 0, 0 ]
+// [ 1, 3, 1, 1, 0 ]
+// We then use another nested forloop, where i only increases up until the third to last integer in rating. If rating[j] > rating[i] then we know we can add greaterThan[j] teams to our total number of teams. The "teams" this represents is effectively (Player i, Player j, Player x where x is a number after j greater than j).
+
+// Similarly, If rating[j] < rating[i], then we can add lessThan[j] number of teams to our result.
+
+// Full Solution:
+
