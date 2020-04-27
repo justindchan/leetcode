@@ -34,10 +34,22 @@
       // contents of arr shifts down and length remains same (pop)
 //
 
-const duplicateZeroes = function(arr) {
+const duplicateZeros = function(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 0) {
-
+      arr.splice(i+1, 0, '0');
+      arr.pop()
     }
   }
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[j] === '0') {
+      arr[j] = 0;
+    }
+  }
+  console.log(arr)
 };
+
+duplicateZeros([1,2,0,2,1]) // [1,2,0,0,2]
+// 4/27/2020
+// Runtime: 64 ms, faster than 89.71% of JavaScript online submissions for Duplicate Zeros.
+// Memory Usage: 36.2 MB, less than 100.00% of JavaScript online submissions for Duplicate Zeros.
