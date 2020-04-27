@@ -47,4 +47,4 @@ const duplicateZeros = function(arr) {
 duplicateZeros([1,2,0,2,1]) // [1,2,0,0,2]
 // 4/27/2020
 // Runtime: 64 ms, faster than 89.71% of JavaScript online submissions for Duplicate Zeros.
-// Memory Usage: 36.2 MB, less than 100.00% of JavaScript online submissions for Duplicate Zeros.
+// Memory Usage: 35.5 MB, less than 100.00% of JavaScript online submissions for Duplicate Zeros.
