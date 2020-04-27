@@ -22,3 +22,9 @@
 // 0 <= arr[i] <= 9
 
 
+// I: a fixed length array of integers
+// O: the same array, with each occurence of zero, duplicated in place and shifting hte remaining elements to the right
+// C: arr will have length 1 - 10000, arr[i] will be an integer 0 - 9 
+// E: no zeroes in the array
+
+// 
