@@ -37,16 +37,11 @@
 const duplicateZeros = function(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === 0) {
-      arr.splice(i+1, 0, '0');
-      arr.pop()
+      arr.splice(i+1, 0, 0);
+      arr.pop();
+      i++;
     }
   }
-  for (let j = 0; j < arr.length; j++) {
-    if (arr[j] === '0') {
-      arr[j] = 0;
-    }
-  }
-  console.log(arr)
 };
 
 duplicateZeros([1,2,0,2,1]) // [1,2,0,0,2]
