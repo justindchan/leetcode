@@ -24,7 +24,20 @@
 
 // I: a fixed length array of integers
 // O: the same array, with each occurence of zero, duplicated in place and shifting hte remaining elements to the right
-// C: arr will have length 1 - 10000, arr[i] will be an integer 0 - 9 
+// C: arr will have length 1 - 10000, arr[i] will be an integer 0 - 9.  Don't return anything.
 // E: no zeroes in the array
 
-// 
+// duplicateZeroes = f (arr) 
+  // loop through arr
+    // if current is 0
+      // insert another 0 after it (splice)
+      // contents of arr shifts down and length remains same (pop)
+//
+
+const duplicateZeroes = function(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 0) {
+
+    }
+  }
+};
