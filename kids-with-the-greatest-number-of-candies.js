@@ -30,3 +30,9 @@
 // 2 <= candies.length <= 100
 // 1 <= candies[i] <= 100
 // 1 <= extraCandies <= 50
+
+
+// I: the array - candies, the integer - extraCandies (candies[i] represensts the number of candies that the ith kid has).
+// O: for each kid, check if they have the most candies of the group if the extra candy is added to their total, then output each result (boolean) in an array.
+// C: candies.length is 2 - 100, candies[i] is 1 - 100, extraCandies is 1 - 50
+// E:
