@@ -36,3 +36,13 @@
 // O: for each kid, check if they have the most candies of the group if the extra candy is added to their total, then output each result (boolean) in an array.
 // C: candies.length is 2 - 100, candies[i] is 1 - 100, extraCandies is 1 - 50
 // E:
+
+// kidsWithCandies - f(candies, extraCandies)
+  // output array - kidHasMostCandies
+  // loop through candies
+    // add extraCandies to current candies[i]
+    // if current with the added extraCandies is the greatest element in the array
+      // set kidHasMostCandies[i] to true
+      // else set kidHasMostCandies[i] to false
+  // return kidHasMostCandies
+//
