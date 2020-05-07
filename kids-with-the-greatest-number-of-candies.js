@@ -2,8 +2,6 @@
 
 // For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies.
 
- 
-
 // Example 1:
 
 // Input: candies = [2,3,5,1,3], extraCandies = 3
@@ -24,7 +22,6 @@
 // Input: candies = [12,1,12], extraCandies = 10
 // Output: [true,false,true]
  
-
 // Constraints:
 
 // 2 <= candies.length <= 100
@@ -38,11 +35,30 @@
 // E:
 
 // kidsWithCandies - f(candies, extraCandies)
-  // output array - kidHasMostCandies
+  // output array - kidsWithMostCandies
   // loop through candies
     // add extraCandies to current candies[i]
     // if current with the added extraCandies is the greatest element in the array
-      // set kidHasMostCandies[i] to true
-      // else set kidHasMostCandies[i] to false
+      // set kidsWithMostCandies[i] to true
+      // else set kidsWithMostCandies[i] to false
   // return kidHasMostCandies
 //
+
+const kidsWithCandies = function(candies, extraCandies) {
+  let kidsWithMostCandies = [];
+  for (let i = 0; i < candies.length; i++) {
+    let isMost = true;
+    for (let j = 0; j < candies.length; j++) {
+      if (candies[i] + extraCandies < candies[j]) {
+        isMost = false;
+      }
+    }
+    kidsWithMostCandies.push(isMost);
+  }
+  return kidsWithMostCandies;
+};
+
+
+
+// Runtime: 56 ms, faster than 74.32% of JavaScript online submissions for Kids With the Greatest Number of Candies.
+// Memory Usage: 34.7 MB, less than 100.00% of JavaScript online submissions for Kids With the Greatest Number of Candies.
