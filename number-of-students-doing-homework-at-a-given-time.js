@@ -55,11 +55,21 @@
 const busyStudent = function(startTime, endTime, queryTime) {
   let numberOfBusyStudents = 0;
   let numberOfStudents = startTime.length;
+  if (numberOfStudents === 1) {
+      if (startTime[0] == endTime[0] && startTime[0] == queryTime) {
+        return 1;
+      }
+      if (queryTime >= startTime && queryTime <= endTime) {
+          return 1;
+      }
+  }
   for (let i = 0; i < numberOfStudents; i++) {
-    let absoluteDiff = Math.abs(startTime[i] - endTime[i]); 
-    if (absoluteDiff >= queryTime) {
+    if (queryTime >= startTime[i] && queryTime <= endTime[i]) {
       numberOfBusyStudents++;
     }
   }
   return numberOfBusyStudents;
 };
+
+// Runtime: 60 ms, faster than 68.06% of JavaScript online submissions for Number of Students Doing Homework at a Given Time.
+// Memory Usage: 33.8 MB, less than 100.00% of JavaScript online submissions for Number of Students Doing Homework at a Given Time.
