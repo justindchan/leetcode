@@ -4,8 +4,6 @@
 
 // Return the number of students doing their homework at time queryTime. More formally, return the number of students where queryTime lays in the interval [startTime[i], endTime[i]] inclusive.
 
- 
-
 // Example 1:
 
 // Input: startTime = [1,2,3], endTime = [3,2,7], queryTime = 4
@@ -39,3 +37,18 @@
 // 1 <= startTime.length <= 100
 // 1 <= startTime[i] <= endTime[i] <= 1000
 // 1 <= queryTime <= 1000
+
+
+// I: two integer arrays, startTime and endTime; one integer, querytime.
+// O: the number of students doing their homework at the time, queryTime.
+// C: startTime and endTime length is equal and ranges from 1 - 100; elements in startTime and endTime range from 1 - 1000; queryTime ranges from 1 - 1000. 
+// E: 
+
+// busyStudent - f(startTime, endTime, queryTime)
+  // storage for output integer - numberOfBusyStudents\
+  // loop through startTime and through endTime simultaneously
+    // if queryTime is is equal to or greater than the absolute value difference between startTime[i] and endTime[i]
+      // increment output 
+  // return output
+//
+
