@@ -42,13 +42,24 @@
 // I: two integer arrays, startTime and endTime; one integer, querytime.
 // O: the number of students doing their homework at the time, queryTime.
 // C: startTime and endTime length is equal and ranges from 1 - 100; elements in startTime and endTime range from 1 - 1000; queryTime ranges from 1 - 1000. 
-// E: 
+// E: startTime and endTime length = 1.
 
 // busyStudent - f(startTime, endTime, queryTime)
   // storage for output integer - numberOfBusyStudents\
   // loop through startTime and through endTime simultaneously
-    // if queryTime is is equal to or greater than the absolute value difference between startTime[i] and endTime[i]
+    // if absolute difference b/w startTime and endTime is greater than or equal to queryTime,
       // increment output 
   // return output
 //
 
+const busyStudent = function(startTime, endTime, queryTime) {
+  let numberOfBusyStudents = 0;
+  let numberOfStudents = startTime.length;
+  for (let i = 0; i < numberOfStudents; i++) {
+    let absoluteDiff = Math.abs(startTime[i] - endTime[i]); 
+    if (absoluteDiff >= queryTime) {
+      numberOfBusyStudents++;
+    }
+  }
+  return numberOfBusyStudents;
+};
