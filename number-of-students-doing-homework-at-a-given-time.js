@@ -45,7 +45,8 @@
 // E: startTime and endTime length = 1.
 
 // busyStudent - f(startTime, endTime, queryTime)
-  // storage for output integer - numberOfBusyStudents\
+  // storage for output integer - numberOfBusyStudents
+  // handle edge case 
   // loop through startTime and through endTime simultaneously
     // if absolute difference b/w startTime and endTime is greater than or equal to queryTime,
       // increment output 
@@ -70,6 +71,9 @@ const busyStudent = function(startTime, endTime, queryTime) {
   }
   return numberOfBusyStudents;
 };
+
+busyStudent([4], [4], 4); // 1
+busyStudent([1,2,3], [3,2,7], 4) // 1
 
 // Runtime: 60 ms, faster than 68.06% of JavaScript online submissions for Number of Students Doing Homework at a Given Time.
 // Memory Usage: 33.8 MB, less than 100.00% of JavaScript online submissions for Number of Students Doing Homework at a Given Time.
