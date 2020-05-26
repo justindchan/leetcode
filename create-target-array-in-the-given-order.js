@@ -55,3 +55,14 @@
     // insert current nums element at the target index determined by the value of the current corresponding element in index
   // return target
 //
+
+var createTargetArray = function(nums, index) {
+  let output = [];
+  for (let i = 0; i < nums.length; i++) {
+      output.splice(index[i], 0, nums[i]);
+  }
+  return output;
+};
+
+// Runtime: 60 ms, faster than 32.99% of JavaScript online submissions for Create Target Array in the Given Order.
+// Memory Usage: 33.6 MB, less than 100.00% of JavaScript online submissions for Create Target Array in the Given Order.
