@@ -18,6 +18,7 @@
 // 2            2        [0,1,2]
 // 3            2        [0,1,3,2]
 // 4            1        [0,4,1,3,2]
+
 // Example 2:
 
 // Input: nums = [1,2,3,4,0], index = [0,1,2,3,0]
@@ -29,6 +30,7 @@
 // 3            2        [1,2,3]
 // 4            3        [1,2,3,4]
 // 0            0        [0,1,2,3,4]
+
 // Example 3:
 
 // Input: nums = [1], index = [0]
@@ -42,3 +44,7 @@
 // 0 <= nums[i] <= 100
 // 0 <= index[i] <= i
 
+// I: two integer arrays, nums and index 
+// O: create and return a target array consisting of the elements of nums, inserted at the the index corresponding to the position of the element in nums. 
+// C: 
+// E:
