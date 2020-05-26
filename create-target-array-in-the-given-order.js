@@ -64,5 +64,8 @@ var createTargetArray = function(nums, index) {
   return output;
 };
 
+createTargetArray([0,1,2,3,4],[0,1,2,2,1]); // [0,4,1,3,2]
+createTargetArray([1],[0]); // [1]
+
 // Runtime: 60 ms, faster than 32.99% of JavaScript online submissions for Create Target Array in the Given Order.
 // Memory Usage: 33.6 MB, less than 100.00% of JavaScript online submissions for Create Target Array in the Given Order.
