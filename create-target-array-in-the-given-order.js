@@ -48,3 +48,10 @@
 // O: create and return a target array consisting of the elements of nums, inserted at the the index corresponding to the position of the element in nums. 
 // C: 
 // E:
+
+// createTargetArray = f(nums, index)
+  // store output - target
+  // iterate through of nums and index
+    // insert current nums element at the target index determined by the value of the current corresponding element in index
+  // return target
+//
