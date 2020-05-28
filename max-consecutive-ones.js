@@ -9,3 +9,24 @@
 
 // The input array will only contain 0 and 1.
 // The length of input array is a positive integer and will not exceed 10,000
+
+
+// I: array called nums, only containing binary
+// O: output a number representing the size of the longest consecutive occurence of 1
+// C: input array contains only binary, length of input array is positive and less than 10,000
+// E: if array length is one, if array is all 0
+
+// findMaxConsecutiveOnes = f(nums)
+  // assign count
+  // assign max
+  // handle edge case if nums length is 1
+  // loop through nums
+    // if nums i is 0
+      // reset count 
+    // else nums i is 1 
+      // if current is 1  
+        // increment count 
+      // if count is greater than max
+        // set max equal to count
+  // return max;
+//
