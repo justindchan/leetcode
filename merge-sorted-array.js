@@ -26,8 +26,26 @@
     // if the last element in nums1 (nums1[m]) is greater than the last element in nums2 (nums2[n]) nums2[n], 
       // set current index i in nums1 (nums1[i]) to the last initialized element in nums1 (nums1[m])
       //  decrement m
-    // else if we have iterated past the last element in nums1 OR if the last initialized element in nums1 (nums1[m]) is less than or equal to the last initialized element in nums2 (nums2[n])
+    // else if we have iterated past the last element in nums1 (m < 0)
+    // OR if the last initialized element in nums1 (nums1[m]) is less than or equal to the last initialized element in nums2 (nums2[n])
       // set current index i in nums1 to the last initialized element in nums2
       // decrement n
 //
 
+const merge = function(nums1, m, nums2, n) {
+  let lastIndex = m + n - 1;
+  m--;
+  n--;
+  for (let i = lastIndex; i >= 0; i--) {
+    if (nums1[m] > nums2[n]) {
+      nums1[i] = nums1[m];
+      m--;
+    } else if (m < 0 || nums1[m] <= nums2[n]) {
+      nums1[i] = nums2[n];
+      n--;
+    }
+  }
+}
+
+// Runtime beats 70.19% of jsavascript submissions
+// Runtime: 56ms, Memory Usage: 33.5MB
