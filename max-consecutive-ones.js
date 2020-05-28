@@ -51,3 +51,5 @@ var findMaxConsecutiveOnes = function(nums) {
   }   
   return max;
 };
+
+// beats 39.54% of javascript solutions
