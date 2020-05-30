@@ -52,3 +52,18 @@
   // return newLength
 //
 
+const removeElement = function(nums, val) {
+  let newLength = nums.length;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] == val) {
+      nums.splice(i, 1);
+      i--;
+    }
+  }
+  return newLength;
+};
+
+removeElement([0,1,2,2,3,0,4,2], 2)
+
+// Runtime beats 29.10% of javascript submissions
+// Runtime: 64ms, Memory usage: 33.9mb
