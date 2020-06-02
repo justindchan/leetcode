@@ -60,3 +60,20 @@ const checkIfExist = function(arr) {
 
 // Beats 32.01% of js submissions
 // O(n2) time, O(1) space. 
+
+
+// cutty javascript methods
+const checkIfExist = function(arr) {
+  if(!arr.length || arr.length === 1) {
+    return false;
+  }
+  for(let i = 0; i < arr.length; i++) {
+      if(arr.includes(arr[i] * 2) && arr[i] !== 0) {
+        return true;
+      }
+      if(arr[i] === 0 && arr.indexOf(0) !== i) {
+        return true;
+      }
+  }
+  return false;
+};
