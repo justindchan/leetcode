@@ -33,7 +33,7 @@
 // I: an array of integers, arr
 // O: return true or false whether N and it's double exist
 // C: arr length is atlest 2 and less than or equal to 500, elements can be positive and negative
-// E:
+// E: ACCOUNT FOR 0!!!
 
 // checkIfExist = f(arr)
   // store boolean var exists = false
@@ -43,3 +43,20 @@
         // set exists = true if so
   // return var exists
 //
+
+// account for zero, since zero times zero is zero, and we can only count the zero once, we can ensure i and j do not iterate over eachother by settin gj to iterate only if it is less than i.
+
+const checkIfExist = function(arr) {
+  debugger
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < i; j++) {
+      if (arr[i] === arr[j] * 2 || arr[i] === arr[j] / 2) {
+        return true;
+      }
+    }
+  }
+  return false;
+};
+
+// Beats 32.01% of js submissions
+// O(n2) time, O(1) space. 
