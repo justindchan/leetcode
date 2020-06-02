@@ -29,3 +29,17 @@
 // 2 <= arr.length <= 500
 // -10^3 <= arr[i] <= 10^3
 
+
+// I: an array of integers, arr
+// O: return true or false whether N and it's double exist
+// C: arr length is atlest 2 and less than or equal to 500, elements can be positive and negative
+// E:
+
+// checkIfExist = f(arr)
+  // store boolean var exists = false
+  // loop through arr - i
+    // for each element i in arr, 
+      // check if there exists element j that is element i divided by 2
+        // set exists = true if so
+  // return var exists
+//
