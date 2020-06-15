@@ -44,3 +44,26 @@
   // return true
 //
 
+const validMountainArray = function(A) {
+  if (A.length <= 2) {
+    return false;
+  }
+  if (A[0] >= A[1] || A[A.length - 2] <= A[A.length -1]) {
+    return false;
+  }
+  let up = true;
+  for (let i = 0; i < A.length; i++) {
+    if (up) {
+      if (A[i] < A[i-1]) {
+        up = false;
+      } else if (A[i] === A[i-1]) {
+        return false;
+      }
+    } else {
+      if (A[i] >= A[i-1]) {
+        return false;
+      }
+    }
+  }
+  return true;
+};
