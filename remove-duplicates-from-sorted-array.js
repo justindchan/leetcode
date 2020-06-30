@@ -11,15 +11,31 @@
 // It doesn't matter what you leave beyond the returned length.
 
 
-// I: a sorted array of numbers.
-// O: redturn the original array, containing no duplicate elements. 
-// C: 
-// E:
+// I: a sorted array of numbers, nums.
+// O: return the new length of nums.
+// C: modify the original array, in-place
+// E: 
 
 // removeDuplcates - f(nums)
   // initilize i
   // while current is equal to pointer, remove pointer
-    // else, increment i
+    // else, increment i to go to the next element
   // return nums
 // 
 
+const removeDuplicates = function(nums) {
+  let i = 0;
+  while (i < nums.length - 1) {
+    let current = nums[i];
+    let pointer = nums[i+1];
+    if (current === pointer) {
+      nums.splice(i, 1);
+    } else {
+      i++;
+    }
+  }
+  return nums;
+}
+
+// Runtime: 180ms, beats 15.00% of Javascript submissions
+// Memeory Usage: 39MB, beats 18.33% of javascript submissions
