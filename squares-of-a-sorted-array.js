@@ -16,3 +16,13 @@
 // A is sorted in non-decreasing order.
 
 
+// I: an array of integers, A, sorted in non-decresing order
+// O: return an array of the suqares of each number, also sorted in non-decreasing order
+// C: length of A is 1 to 10000, elements in A are -10000 to 10000, A is pre sorted in non-decreasing order
+// E: A.length = 1
+
+// sortedSquares - f(A)
+  // loop through and square each element in A 
+  // sort the modified array in non decreasing order
+  // return A
+//
