@@ -26,3 +26,18 @@
   // sort the modified array in non decreasing order
   // return A
 //
+
+const sortedSquares = function(A) {
+  for (let i = 0, ALen = A.length; i < ALen; i++) {
+    A[i] = A[i] * A[i];
+  }
+  A.sort(function(a,b) {
+    return a - b;
+  });
+  return A;
+};
+
+sortedSquares([-4,-1,0,3,10]) // [0,1,9,16,100]
+
+// Runtime: 108ms, beats 84.91%
+// Memory Usage: 42.2MB, beats 90.67% 
