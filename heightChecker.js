@@ -28,3 +28,6 @@ var heightChecker = function(heights) {
 var sortNum = ((a, b) => a - b)
 
 // for some reason, if the first console.log runs, the code breaks, something to do with .osrt needing spread operator and also not returning an array by default?
+
+// Runtime: 72ms, beats 43.93% 
+// Memory Usage: 34.8MB, beats 89.12%

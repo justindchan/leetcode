@@ -1,7 +1,7 @@
 ## leetcode
-problems - 67+
+problems - 68+
 SQL - 2
-Arrays - +31
+Arrays - +33
 Strings - +1
 Linked-Lists - 3 (on mergetwosortedlists)
 Math - 2
