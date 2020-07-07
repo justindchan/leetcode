@@ -34,8 +34,7 @@
   // return the third to last index (third max value) as SET[SET.length -3].
 // 
 
-
-const sortNum = ((a, b) => a - b)
+const sortNums = ((a, b) => a - b)
 
 const thirdMax = function(nums) {
   // filter non distinct values and sort
@@ -52,4 +51,5 @@ const thirdMax = function(nums) {
 let nums = [3,2,1];
 thirdMax(nums); // 1
 
- 
+// Runtime: 64 ms, beats 82.69%
+// Memory usages: 37.5 MB, beats 26.38%
