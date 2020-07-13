@@ -27,3 +27,17 @@
   // return output 
 //
 
+// O(1) space, O(n^2) time
+const findDisappearedNumbers = function(nums) {
+  let disappeared = [];
+  let max = nums.length;
+  for (let i = 1; i <= max; i++) {
+    if (!nums.includes(i)) {
+      disappeared.push(i)
+    }
+  }
+  return disappeared;
+};
+// Runtime: 9380 ms, beats 0%.
+// Memory Usage: 44.8 mb, beats 77%.
+
