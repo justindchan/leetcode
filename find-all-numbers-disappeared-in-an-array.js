@@ -41,7 +41,6 @@ const findDisappearedNumbers = function(nums) {
 // Runtime: 9380 ms, beats 0%.
 // Memory Usage: 44.8 mb, beats 77%.
 
-
 // using extra storage?, O(n) time
 const findDisappearedNumbers = function(nums) {
   let occurences = {};
@@ -57,6 +56,5 @@ const findDisappearedNumbers = function(nums) {
   }
   return missingNums;
 };
-
 // Runtime: 176 ms, beats 32.51%.
 // Memory Usage: 46.8 mb, beats 36.71%
