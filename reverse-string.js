@@ -25,3 +25,5 @@ var reverseString = function(s) {
   };
 
   reverseString(["h","e","l","l","o"])  //  ["o","l","l","e","h"]  
+
+  // Runtime: 140ms, beats 16.06%
