@@ -27,3 +27,4 @@ var reverseString = function(s) {
   reverseString(["h","e","l","l","o"])  //  ["o","l","l","e","h"]  
 
   // Runtime: 140ms, beats 16.06%
+  // Memory Usage: 42.2MB, beats 99.75%
