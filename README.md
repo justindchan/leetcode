@@ -1,7 +1,7 @@
 # Repository of practice interview problems and solutions :)
 
-## Leetcode:
- - problems - 74+
+## Leetcode problems - 73
+(need to reaccount for)
  - SQL - 2
  - Arrays - +35
  - Strings - +7

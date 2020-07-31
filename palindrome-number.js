@@ -41,11 +41,10 @@
   // while (number is 'truthy'/not 0)
     // push last digit to array using the result of modulo 10 of num
     // remove last digit from num using Math.floor() of num/10 (moves decimal place over and then floors it to get rid of decimal place)
-  
-  // join array and reverse and, then check if joined-reversal is equal to original input
-    // return true
-  // else 
-    // return false
+  // loop through holder array and check if element at i is equal to element at i in the reversed copy of holder array.  
+    // if holder i and reversed holder i are ever not equal 
+      // return false
+  // return true
 //
 
 const isPalindrome = function(x) {
