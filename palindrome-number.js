@@ -69,6 +69,8 @@ const isPalindrome = function(x) {
   return true;
 };
 
+isPalindrome(121);  // true
+isPalindrome(10) // false
 
 // Runtime: 204ms, beats 81.39%.
 // Memory Usage: 46.1MB, beats 50.79%. 
