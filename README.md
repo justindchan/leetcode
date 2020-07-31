@@ -1,6 +1,6 @@
-## Repository of practice interview problems and solutions
+# Repository of practice interview problems and solutions :)
 
-# LeetCode:
+## Leetcode:
  - problems - 74+
  - SQL - 2
  - Arrays - +35
