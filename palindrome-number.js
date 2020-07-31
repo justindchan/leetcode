@@ -36,6 +36,13 @@
     // return false
   // accout for edge one digit
     // return true
-  // 
-  
+  // assign x = num (copy of input)
+  // assign storage for holder array
+  // while (number is 'truthy'/not 0)
+    // push last digit to array using the result of modulo 10 of num
+    // remove last digit from num using Math.floor() of num/10 (moves decimal place over and then floors it to get rid of decimal place)
+  // join array and reverse, then check if joined-reversal is equal to original input
+    // return true
+  // else 
+    // return false
 //
