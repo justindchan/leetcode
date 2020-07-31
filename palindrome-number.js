@@ -41,8 +41,34 @@
   // while (number is 'truthy'/not 0)
     // push last digit to array using the result of modulo 10 of num
     // remove last digit from num using Math.floor() of num/10 (moves decimal place over and then floors it to get rid of decimal place)
-  // join array and reverse, then check if joined-reversal is equal to original input
+  
+  // join array and reverse and, then check if joined-reversal is equal to original input
     // return true
   // else 
     // return false
 //
+
+const isPalindrome = function(x) {
+  if (x < 0) {
+    return false;
+  }
+  if (x < 10) {
+    return true;
+  }
+  let copy = x;
+  let mutable = [];
+  while (copy) {
+    mutable.push(copy % 10);
+    copy = Math.floor(copy/10);
+  }
+  for (let i = 0, len = mutable.length; i < len; i++) {
+    if (mutable[i] != mutable.reverse()[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
+
+// Runtime: 204ms, beats 81.39%.
+// Memory Usage: 46.1MB, beats 50.79%. 
