@@ -76,3 +76,6 @@ runningSum([1,2,3,4]) // [1,3,6,10]
 
 // Runtime: 72ms, beats 77.86%.
 // Memory Usage: 37MB, beats 100%.
+
+// Final Notes:
+// trying to use recursion actually made this problem harder to solve.  in the future, try to not use recursion as much as possible, iteration is much simpler and in this case, way more efficient. 
