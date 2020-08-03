@@ -48,7 +48,6 @@
 
 // works for one call, then sums has to be reset to an empty array due to scope.
 let sums = [];
-
 const runningSum = function(nums) {
   if (nums.length === 1) {
     sums.unshift(nums[0]);
@@ -61,5 +60,14 @@ const runningSum = function(nums) {
   return sums;
 };
 
-
+// PASSING SOLUTION:
+// loop through nums
+// start at second index, set current to equal the sum of current and the index previous (which will be the sum of all previous elements)
+// on the second interation, at the third index, set current to equal sum of current plus the previous index value.
+const runningSum = function(nums) {
+  for (let i = 1; i < nums.length; i++) {
+    nums[i] += nums[i-1];
+  }
+  return nums;
+}
 
