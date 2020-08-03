@@ -34,8 +34,9 @@
 // can be solved by progresive summing all elements, than popping the last element off of nums, then repeat. 
 // can be solved recursively, base case is nums.length === 1, recursive case, nums.length < 1.
 
+// Psuedocode:
+// storage for output - sums
 // f - runningSum(nums)
-  // storage for output - sums
   // if (nums.length === 1)
     // add element to beginning of sums and return sums
   // else 
@@ -44,3 +45,21 @@
     // pop off last element in nums
     // call runningSum(nums)
 //
+
+// works for one call, then sums has to be reset to an empty array due to scope.
+let sums = [];
+
+const runningSum = function(nums) {
+  if (nums.length === 1) {
+    sums.unshift(nums[0]);
+  } else {
+    let sum = nums.reduce((a, c) => a + c, 0); 
+    sums.unshift(sum);
+    nums.pop();
+    runningSum(nums);
+  }
+  return sums;
+};
+
+
+
