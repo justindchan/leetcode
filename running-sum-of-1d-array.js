@@ -25,3 +25,22 @@
 // -10^6 <= nums[i] <= 10^6
 
 
+// i: given an array of numbers, nums.
+// o: retunr the running sum of nums.
+// c: nums.length range is 1 to 1000, nums[i] ranges from -10^6 to 10^6.
+// e: nums.length = 1
+
+// NOTES:
+// can be solved by progresive summing all elements, than popping the last element off of nums, then repeat. 
+// can be solved recursively, base case is nums.length === 1, recursive case, nums.length < 1.
+
+// f - runningSum(nums)
+  // storage for output - sums
+  // if (nums.length === 1)
+    // add element to beginning of sums and return sums
+  // else 
+    // sum all elements in nums 
+    // unshift sum to sums
+    // pop off last element in nums
+    // call runningSum(nums)
+//
