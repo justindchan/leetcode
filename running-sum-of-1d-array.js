@@ -71,3 +71,8 @@ const runningSum = function(nums) {
   return nums;
 }
 
+runningSum([1,1,1,1,1]) // [1,2,3,4,5]
+runningSum([1,2,3,4]) // [1,3,6,10]
+
+// Runtime: 72ms, beats 77.86%.
+// Memory Usage: 37MB, beats 100%.
