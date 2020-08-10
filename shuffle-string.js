@@ -61,3 +61,6 @@ const restoreString = function(s, indices) {
   }
   return shuffled.join('');
 };
+
+// Runtime: 80ms, beats 92.92%.
+// Memory Usage: 38.3MB, beats 50.20%.
