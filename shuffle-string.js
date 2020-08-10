@@ -47,9 +47,17 @@
 // double iteration, using auxiliary output array
 
 // f - restoreString(s, indices)
-  // assign storage for output - shuffled
+  // assign storage for auxiliary array - shuffled
   // loop though s and indices simultaneously
     // push current i of s to the value of current i in indices (the new index)
-  // return output
+  // return output as a string
 //
 
+const restoreString = function(s, indices) {
+  let n = s.length;
+  let shuffled = [];
+  for (let i = 0; i < n; i++) {
+    shuffled[indices[i]] = s[i];
+  }
+  return shuffled.join('');
+};
