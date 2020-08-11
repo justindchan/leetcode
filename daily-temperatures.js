@@ -20,6 +20,7 @@
     // inner loop start at current outer iteration of T.
       // if inner itertaion is greater than outer iteration,
         // subtract outer iteration index from inner iteration index = daysTilWarmer.
+        // break out of inner loop by setting inner iteration value equal to T.length 
   // return daysTilWarmerList.
 //
 
