@@ -40,3 +40,21 @@
    // for each iteration in nums, loop through remaining elements
      // if value at inner iteration is equal to value of current outer iteration 
 //
+
+const numIdenticalPairs = function(nums) {
+  let pairCount = 0;
+  let n = nums.length;
+  for (let i = 0; i < n; i++) {
+    for (let j = i+1; j < n; j++) {
+      if (nums[j] == nums[i]) {
+        pairCount++;
+      }
+    }
+  }
+  return pairCount;
+};
+
+numIdenticalPairs([1,2,3,1,1,3]) // 4
+
+// Runtime: 64ms, beats 97.69%.
+// Memory usage: 36.8 MB, beats 11.28%.
