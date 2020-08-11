@@ -1,7 +1,7 @@
 # Repository of practice interview problems and solutions :)
  - A leetcode a day keeps the bugs at bay.
 
-## Leetcode problems - 75
+## Leetcode problems - 76
 (recount)
  - SQL - 2
  - Arrays - +36
