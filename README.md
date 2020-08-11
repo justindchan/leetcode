@@ -1,5 +1,5 @@
 # Repository of practice interview problems and solutions :)
- - A leetcode a day keeps the bugs at bay.
+ - A leetcode a day helps keeps the bugs at bay.
 
 ## Leetcode problems - 76
 (recount)
