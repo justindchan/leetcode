@@ -24,3 +24,23 @@
   // return daysTilWarmerList.
 //
 
+const dailyTemperatures = function(T) {
+  let daysTilWarmerList = [];
+  let n = T.length;
+  for (let i = 0; i < n; i++) {
+    let daysTilWarmer = 0;
+    for (let j = i+1; j < n; j++) {
+      if (T[j] > T[i]) {
+        daysTilWarmer = j - i;
+        j = n;
+      } 
+    }
+    daysTilWarmerList.push(daysTilWarmer);
+  }
+  return daysTilWarmerList
+};
+
+dailyTemperatures([73,74,75,71,69,72,76,73]); // [1,1,4,2,1,1,0,0]
+
+// Runtime:  772 ms, faster than 26.99% of JavaScript online submissions for Daily Temperatures.
+// Memory Usage: 46.7 MB, less than 42.11% of JavaScript online submissions for Daily Temperatures.
