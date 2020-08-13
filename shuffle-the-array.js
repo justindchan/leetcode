@@ -38,3 +38,11 @@
   // return shuffled
 //;
 
+const shuffle = (nums, n) => {
+  let shuffled = [], subX = nums.slice(0, n),subY = nums.slice(n, 2*n)
+  for (let i = 0; i < n; i++) {
+    shuffled.push(subX[i]);
+    shuffled.push(subY[i]);
+  }
+  return shuffled;
+};
