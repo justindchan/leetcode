@@ -46,3 +46,8 @@ const shuffle = (nums, n) => {
   }
   return shuffled;
 };
+
+shuffled([2,5,1,3,4,7], 3); // [2,3,5,4,1,7]
+
+// Runtime: 76 ms, faster than 90.24% of JavaScript online submissions for Shuffle the Array.
+// Memory Usage: 38.4 MB, less than 79.04% of JavaScript online submissions for Shuffle the Array.
