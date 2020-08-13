@@ -22,3 +22,19 @@
 // 1 <= nums[i] <= 10^3
 
 
+// i: an array consisting of 2n elements, nums; the number of each kind of element, n.
+// o: return the array in the form of [x1, y1, x2, y2, ..... xn, yn].
+// c: n ranges from 1 to 500, nums.length is 2n, elements ranges from 1 to 10^3.
+// e: nums.length is 2.
+
+// abstract: split array into two equal length sub-arrays, then push to output array in specified order.
+
+// f - shuffle(nums, n)
+  // store for output array - shuffled.
+  // split nums into to equal length sub arrays ([x1,x2,x3,xn], [y1,y2,y3,yn]).
+  // iterate through the subarrays simultaneously.
+    // push current i in x subarray.
+    // push current i in y subarray.
+  // return shuffled
+//;
+
