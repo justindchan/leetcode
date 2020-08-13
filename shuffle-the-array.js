@@ -27,7 +27,7 @@
 // c: n ranges from 1 to 500, nums.length is 2n, elements ranges from 1 to 10^3.
 // e: nums.length is 2.
 
-// abstract: split array into two equal length sub-arrays, then push to output array in specified order.
+// abstract: split array into two equal length sub-arrays, then push to output array to achieve desired order.
 
 // f - shuffle(nums, n)
   // store for output array - shuffled.
