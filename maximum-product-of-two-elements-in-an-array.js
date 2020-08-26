@@ -44,3 +44,23 @@
   // return max;
 //
 
+const maxProduct = (nums) => {
+  let first = 0;
+  let second = 0;
+  let max = 0;
+  const n = nums.length;
+  for (let i = 0; i < n; i++) {
+    if (nums[i] > first) {
+      second = first;
+      first = nums[i];
+    } else if (nums[i] > second) {
+      second = nums[i];
+    }
+  }
+  max = (first - 1)*(second - 1);
+  return max;
+}
+
+// Runtime: 64 ms, faster than 98.49% of JavaScript online submissions for Maximum Product of Two Elements in an Array.
+// Memory Usage: 37 MB, less than 39.94% of JavaScript online submissions for Maximum Product of Two Elements in an Array.
+
