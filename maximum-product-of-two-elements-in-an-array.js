@@ -61,6 +61,8 @@ const maxProduct = (nums) => {
   return max;
 }
 
+maxProduct([3,4,5,2]); // 12
+
 // Runtime: 64 ms, faster than 98.49% of JavaScript online submissions for Maximum Product of Two Elements in an Array.
 // Memory Usage: 37 MB, less than 39.94% of JavaScript online submissions for Maximum Product of Two Elements in an Array.
 
