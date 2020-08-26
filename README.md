@@ -4,7 +4,7 @@
 ## Leetcode problems - 78
 (recount)
  - SQL - 3
- - Arrays - +36
+ - Arrays - +37
  - Strings - +7
  - Linked-Lists - 3 
  - Math - 4
