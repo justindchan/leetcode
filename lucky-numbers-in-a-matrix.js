@@ -37,12 +37,14 @@
 // - First, get each row's minimum, then of those numbers, check if each is the maximum of each column (sub index). 
 
 // f - luckyNumbers(matrix)
-  // store output array - lucky;
+  // store output array - lucky = [];
   // loop through matrix
     // loop thorugh each row
-      // find minimum element of each row
+      // store for minimum each iteration - min = 0;
+      // find minimum element of each row  
       // if current is the minimum, 
         // at that index+subindex, check if current is also the maximum in its column
           // push current to output array if so;
   // return output;
 //
+
