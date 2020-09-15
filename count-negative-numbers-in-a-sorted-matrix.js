@@ -43,7 +43,7 @@ var countNegatives = function(grid) {
   return negatives;
 };
 
-
+countNegatives([[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]); // 8
 
 // Runtime: 72 ms, faster than 92.36% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
 // Memory Usage: 37.6 MB, less than 91.01% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
