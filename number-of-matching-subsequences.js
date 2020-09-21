@@ -19,3 +19,4 @@
 // c: all characters in inputs are lowercase, S.length ranges from 1 - 50000, words.length ranges from 1 - 5000, words[i].length ranges from 1 - 50.
 // e: 
 
+// abstract: check if if character in each word can be found in S using dual iteration.
