@@ -10,3 +10,5 @@
  - Math - 4
 
  ## Continued
+ (number-of-matching-substrings)
+ (search-in-rotated-sorted-array)
