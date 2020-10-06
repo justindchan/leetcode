@@ -30,3 +30,5 @@
 // o:
 // c: 
 // e:
+
+// abstract: first, delete all the characters not found in s from t.  second, check if remaining characters in t match order of characters in s.                    
