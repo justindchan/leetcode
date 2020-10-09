@@ -14,5 +14,5 @@
  (number-of-matching-substrings)
  (search-in-rotated-sorted-array)
 
- ## Udemy coures material
+ ## Udemy course material
   - 
