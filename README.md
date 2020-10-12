@@ -14,5 +14,6 @@
  (number-of-matching-substrings)
  (search-in-rotated-sorted-array)
 
- ## Udemy course material
-  - data structures
+ ## Udemy course material - Data Structures and Algorithms
+  - Part one: Learning Big O notation
+
