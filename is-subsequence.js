@@ -26,9 +26,43 @@
 // 0 <= t.length <= 10^4
 // Both strings consists only of lowercase characters.
 
-// i: 
-// o:
+// i: two strings to compare against one another.
+// o: boolean true or false.
 // c: 
 // e:
 
-// abstract: first, delete all the characters not found in s from t.  second, check if remaining characters in t match order of characters in s.                    
+// abstract: iterate through both i and j simultaneously, checking for equality between current s and current j.  if we are able to iterate to the end of s, then isSubstring = true.
+
+var isSubsequence = function(s, t) {
+  let i = 0;
+  if (s=== "") return true;
+  for(let n=0; n<t.length; n++){
+      if(t[n] === s[i]){
+          i++;
+          if(i==s.length){
+              return true;
+          }
+      }
+  }
+  return false;
+};
+
+//clever 
+let isSubsequence = (s, t, i = 0) => {
+  for (let j = 0; i < s.length && j < t.length; ++j)
+      if (s[i] == t[j])
+          ++i;
+  return i == s.length;
+};
+
+// 2 pointer approach
+var isSubsequence = function(s, t) {
+  if(t.length < s.length) return false;
+  let i=0;
+  let j=0;
+  while(i <t.length){
+      if(s[j] ==t[i]) j++;
+      i++;
+  }
+  return j == s.length;
+};
