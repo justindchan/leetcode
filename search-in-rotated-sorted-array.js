@@ -4,6 +4,8 @@
 
 // If target is found in the array return its index, otherwise, return -1.
 
+// (USE BINARY SEARCH FOR THIS QUESTION, solution should be O(log n)).
+
 // Example 1:
 
 // Input: nums = [4,5,6,7,0,1,2], target = 0
@@ -26,4 +28,5 @@
 // All values of nums are unique.
 // nums is guranteed to be rotated at some pivot.
 // -10^4 <= target <= 10^4
+
 

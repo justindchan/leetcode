@@ -47,14 +47,21 @@
   // return totalTime
 //
 
-const minimumTimeToVisitAllPoints = (points) => {
+const minTimeToVisitAllPoints = (points) => {
   let totalTime = 0;
   for (let i = 0; i < points.length; i ++) {
-    let xDiff = Math.abs(points[i][0] - points[i+1][0]);
-    let yDiff = Math.abs(points[i][1] - points[i+1][1]);
-    // console.log(xDiff, yDiff)
+    let xDiff = 0;
+    let yDiff = 0;
+    if (points[i+1]) {
+      xDiff = Math.abs(points[i][0] - points[i+1][0]);
+      yDiff = Math.abs(points[i][1] - points[i+1][1]);
+    }
     totalTime += Math.max(xDiff, yDiff)
-    console.log(totalTime);
   }
   return totalTime;
 };
+
+minTimeToVisitAllPoints([[1,1],[3,4],[-1,0]]) // 7
+
+// Runtime: 84 ms, faster than 63.36% of JavaScript online submissions for Minimum Time Visiting All Points.
+// Memory Usage: 40.4 MB, less than 27.59% of JavaScript online submissions for Minimum Time Visiting All Points.
