@@ -8,7 +8,7 @@
  - Arrays - +37
  - Strings - +7
  - Linked-Lists - 3 
- - Math - 4
+ - Math - 5
 
  ## Continued
  (number-of-matching-substrings)
