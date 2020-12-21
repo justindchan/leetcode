@@ -1,13 +1,15 @@
-// On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points.
+// On a 2D plane, there are n points with integer coordinates points[i] = [xi, yi]. Return the minimum time in seconds to visit all the points in the order given by points.
 
-// You can move according to the next rules:
+// You can move according to these rules:
 
-// In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in one second).
+// In 1 second, you can either:
+  // move vertically by one unit,
+  // move horizontally by one unit, or
+  // move diagonally sqrt(2) units (in other words, move one unit vertically then one unit horizontally in 1 second).
 // You have to visit the points in the same order as they appear in the array.
- 
+// You are allowed to pass through points that appear later in the order, but these do not count as visits.
 
 // Example 1:
-
 
 // Input: points = [[1,1],[3,4],[-1,0]]
 // Output: 7
@@ -15,15 +17,44 @@
 // Time from [1,1] to [3,4] = 3 seconds 
 // Time from [3,4] to [-1,0] = 4 seconds
 // Total time = 7 seconds
+
 // Example 2:
 
 // Input: points = [[3,2],[-2,2]]
 // Output: 5
  
-
 // Constraints:
 
 // points.length == n
 // 1 <= n <= 100
 // points[i].length == 2
 // -1000 <= points[i][0], points[i][1] <= 1000
+
+
+// abstract:  the greatest difference between eother x or y coordinate will equal the number of seconds it took to traverse to that point.
+// i: the points to be visited, in sequence.
+// o: the minimum number of seconds required to visit all points
+// c: points.length = n, 1 <= n <= 100, points[i].length == 2, -1000 <= points[i][0], points[i][1] <= 1000. 
+// e:  
+
+// notes: go as far diagonally first
+
+// function = minimumTimeToVisitAllPoints (points)
+  // variable to store totalTime = 0;
+  // loop through points, start at first point
+    // find greatest difference between either x or y of first and next point
+    // the greater absolutevalue of subtracting x[i] from y[i] += totalTime 
+  // return totalTime
+//
+
+const minimumTimeToVisitAllPoints = (points) => {
+  let totalTime = 0;
+  for (let i = 0; i < points.length; i ++) {
+    let xDiff = Math.abs(points[i][0] - points[i+1][0]);
+    let yDiff = Math.abs(points[i][1] - points[i+1][1]);
+    // console.log(xDiff, yDiff)
+    totalTime += Math.max(xDiff, yDiff)
+    console.log(totalTime);
+  }
+  return totalTime;
+};
