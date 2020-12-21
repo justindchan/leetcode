@@ -4,10 +4,11 @@
 ## Leetcode problems - 78
 (recount)
  - SQL - 3
- - Arrays - +37
- - Strings - +7
+ - Arrays - 37
+ - Strings - 7
  - Linked-Lists - 3 
  - Math - 5
+ - ? 
 
  ## Continued
  (number-of-matching-substrings)
