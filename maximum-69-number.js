@@ -73,6 +73,7 @@ const maximum69Number = (nums) => {
   return max;
 };
 
+maximum69Number(9669) // 9969
 
 // Runtime: 68 ms, faster than 98.11% of JavaScript online submissions for Maximum 69 Number.
 // Memory Usage: 38.7 MB, less than 45.11% of JavaScript online submissions for Maximum 69 Number.
