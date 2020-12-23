@@ -41,7 +41,7 @@ const sumZero = (n) => {
   return sumZ;
 }
 
-
+sumZero(5) // [0,1,-1,2,-2]
 
 // Runtime: 76 ms, faster than 93.35% of JavaScript online submissions for Find N Unique Integers Sum up to Zero.
 // Memory Usage: 39.3 MB, less than 51.23% of JavaScript online submissions for Find N Unique Integers Sum up to Zero.
