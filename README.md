@@ -1,11 +1,11 @@
 # Repository of practice interview problems and solutions :)
  - A leetcode a day keeps the bugs at bay.
 
-## Leetcode problems - 79
+## Leetcode problems - 80
 (recount)
  - SQL - 3
  - Arrays - 37
- - Strings - 7
+ - Strings - 8
  - Linked-Lists - 3 
  - Math - 5
  - integers/digits - 1
