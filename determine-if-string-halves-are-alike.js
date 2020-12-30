@@ -27,15 +27,11 @@
 
 const halvesAreAlike = (s) => {
   const n = s.length;
-  // declare vowels
   const vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u'];
-  // split string
   const firstHalf = s.slice(0, n/2);
   const secondHalf = s.slice(n/2);
-  // count vowels
   let firstCount = 0;
   let secondCount = 0;
-  // loop through strings, count vowels found in each
   for (let i = 0; i < n/2; i++) {
     if (vowels.includes(firstHalf[i])) {
       firstCount++;
@@ -46,6 +42,8 @@ const halvesAreAlike = (s) => {
   }
   return firstCount === secondCount ? true : false;
 }
+
+halvesAreAlike('heya') // true
 
 // Runtime: 80 ms, faster than 87.30% of JavaScript online submissions for Determine if String Halves Are Alike.
 // Memory Usage: 39.4 MB, less than 59.28% of JavaScript online submissions for Determine if String Halves Are Alike.
